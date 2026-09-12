@@ -1,0 +1,1830 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+
+    background: #090B0E;
+
+    font-family: "Inter", sans-serif;
+
+    color: #F5F7FA;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+
+/* =========================================================
+   MAIN FIGMA FRAME
+   1440 × 3600
+========================================================= */
+
+.portfolio {
+    position: relative;
+
+    width: 1440px;
+    height: 3600px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    background: #090B0E;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.navbar {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 1440px;
+    height: 88px;
+}
+
+
+/* Logo */
+
+.logo {
+    position: absolute;
+
+    left: 72px;
+    top: 48px;
+
+    width: 90px;
+    height: 34px;
+
+    font-size: 28px;
+    line-height: normal;
+
+    font-weight: 700;
+
+    color: #F4F7FB;
+
+    letter-spacing: -0.8px;
+}
+
+
+/* Navigation */
+
+.navigation {
+    position: absolute;
+
+    left: 760px;
+    top: 54px;
+
+    width: 600px;
+    height: 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 18px;
+}
+
+
+.navigation a {
+    font-size: 14px;
+
+    line-height: normal;
+
+    font-weight: 500;
+
+    color: #AEB9C8;
+
+    white-space: nowrap;
+
+    transition: color 0.2s ease;
+}
+
+
+.navigation a:hover {
+    color: #F4F7FB;
+}
+
+
+/* Navbar button */
+
+.nav-button {
+    position: absolute;
+
+    left: 1220px;
+    top: 40px;
+
+    width: 148px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 21px;
+
+    background: #E9EEF5;
+
+    color: #10151E;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    line-height: normal;
+
+    transition: opacity 0.2s ease;
+}
+
+
+.nav-button:hover {
+    opacity: 0.88;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 1440px;
+    height: 680px;
+}
+
+
+/* Hero left content */
+
+.hero-content {
+    position: absolute;
+
+    left: 72px;
+    top: 170px;
+
+    width: 820px;
+}
+
+
+/* Eyebrow */
+
+.hero-eyebrow {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 600px;
+
+    font-size: 13px;
+
+    line-height: normal;
+
+    font-weight: 600;
+
+    color: #8EA0B8;
+}
+
+
+/* Main title */
+
+.hero-title {
+    position: absolute;
+
+    left: 0;
+    top: 40px;
+
+    width: 820px;
+    height: 150px;
+
+    font-size: 66px;
+
+    line-height: normal;
+
+    font-weight: 700;
+
+    letter-spacing: -2.6px;
+
+    color: #F5F7FA;
+}
+
+
+/* Description */
+
+.hero-description {
+    position: absolute;
+
+    left: 0;
+    top: 304px;
+
+    width: 620px;
+    height: 56px;
+
+    font-size: 20px;
+
+    line-height: normal;
+
+    font-weight: 400;
+
+    color: #AEB9C8;
+}
+
+
+/* Hero button */
+
+.hero-button {
+    position: absolute;
+
+    left: 0;
+    top: 392px;
+
+    width: 164px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 25px;
+
+    background: #F5F7FA;
+
+    color: #10151E;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    line-height: normal;
+
+    transition: opacity 0.2s ease;
+}
+
+
+.hero-button:hover {
+    opacity: 0.88;
+}
+
+
+/* Status */
+
+.hero-status {
+    position: absolute;
+
+    left: 0;
+    top: 462px;
+
+    width: 600px;
+
+    font-size: 12px;
+
+    line-height: normal;
+
+    font-weight: 500;
+
+    color: #7D8DA3;
+}
+
+
+/* =========================================================
+   HERO VISUAL
+========================================================= */
+
+.hero-visual {
+    position: absolute;
+
+    left: 950px;
+    top: 165px;
+
+    width: 400px;
+    height: 420px;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    background: #101722;
+}
+
+
+/* Glow */
+
+.hero-glow {
+    position: absolute;
+
+    left: 60px;
+    top: 60px;
+
+    width: 280px;
+    height: 280px;
+
+    border-radius: 140px;
+
+    background: #182537;
+}
+
+
+/* MZ */
+
+.hero-monogram {
+    position: absolute;
+
+    left: 90px;
+    top: 150px;
+
+    width: 220px;
+
+    font-size: 88px;
+
+    line-height: normal;
+
+    font-weight: 700;
+
+    letter-spacing: -5px;
+
+    text-align: center;
+
+    color: #E9EEF5;
+}
+
+
+/* Caption */
+
+.hero-caption {
+    position: absolute;
+
+    left: 90px;
+    top: 265px;
+
+    width: 220px;
+
+    font-size: 12px;
+
+    line-height: normal;
+
+    font-weight: 600;
+
+    text-align: center;
+
+    color: #8496AE;
+}
+
+
+/* =========================================================
+   GLOBAL SECTION LABEL
+========================================================= */
+
+.section-label {
+    position: absolute;
+
+    left: 0;
+
+    width: 300px;
+
+    font-size: 13px;
+
+    line-height: normal;
+
+    font-weight: 600;
+
+    color: #8092A9;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about {
+    position: absolute;
+
+    left: 72px;
+    top: 685px;
+
+    width: 1296px;
+    height: 640px;
+}
+
+
+/* Label */
+
+.about .section-label {
+    top: 0;
+}
+
+
+/* Title */
+
+.about-title {
+    position: absolute;
+
+    left: 0;
+    top: 40px;
+
+    width: 620px;
+
+    font-size: 42px;
+
+    line-height: normal;
+
+    font-weight: 700;
+
+    letter-spacing: -1.5px;
+
+    color: #F5F7FA;
+}
+
+
+/* Description */
+
+.about-description {
+    position: absolute;
+
+    left: 678px;
+    top: 45px;
+
+    width: 560px;
+
+    font-size: 20px;
+
+    line-height: normal;
+
+    font-weight: 400;
+
+    color: #AEB9C8;
+}
+
+
+/* =========================================================
+   PRINCIPLES
+========================================================= */
+
+.principles {
+    position: absolute;
+
+    left: 0;
+    top: 170px;
+
+    width: 1296px;
+    height: 150px;
+}
+
+
+/* Card */
+
+.principle-card {
+    position: absolute;
+
+    top: 0;
+
+    width: 400px;
+    height: 150px;
+
+    border-radius: 20px;
+
+    background: #0D141E;
+}
+
+
+.principle-card:nth-child(1) {
+    left: 0;
+}
+
+
+.principle-card:nth-child(2) {
+    left: 432px;
+}
+
+
+.principle-card:nth-child(3) {
+    left: 864px;
+}
+
+
+/* Number */
+
+.principle-number {
+    position: absolute;
+
+    left: 24px;
+    top: 25px;
+
+    font-size: 12px;
+
+    line-height: normal;
+
+    font-weight: 600;
+
+    color: #71839B;
+}
+
+
+/* Heading */
+
+.principle-card h3 {
+    position: absolute;
+
+    left: 24px;
+    top: 55px;
+
+    font-size: 17px;
+
+    line-height: normal;
+
+    font-weight: 700;
+
+    color: #F0F4F8;
+}
+
+
+/* Description */
+
+.principle-card p {
+    position: absolute;
+
+    left: 24px;
+    top: 88px;
+
+    width: 330px;
+
+    font-size: 14px;
+
+    line-height: normal;
+
+    font-weight: 400;
+
+    color: #9AA9BC;
+}
+
+
+/* =========================================================
+   SKILLS
+========================================================= */
+
+.skills {
+    position: absolute;
+
+    left: 72px;
+    top: 1080px;
+
+    width: 1296px;
+    height: 285px;
+}
+
+
+.skills .section-label {
+    top: 0;
+}
+
+
+/* Title */
+
+.skills-title {
+    position: absolute;
+
+    left: 0;
+    top: 40px;
+
+    width: 600px;
+
+    font-size: 42px;
+
+    line-height: normal;
+
+    font-weight: 700;
+
+    letter-spacing: -1.5px;
+
+    color: #F5F7FA;
+}
+
+
+/* Skill columns */
+
+.skill-column {
+    position: absolute;
+
+    top: 50px;
+
+    width: 180px;
+}
+
+
+.skill-core {
+    left: 678px;
+}
+
+
+.skill-tools {
+    left: 883px;
+}
+
+
+.skill-growing {
+    left: 1088px;
+}
+
+
+/* Skill heading */
+
+.skill-heading {
+    width: 180px;
+
+    margin-bottom: 24px;
+
+    font-size: 11px;
+
+    line-height: normal;
+
+    font-weight: 600;
+
+    color: #71839B;
+}
+
+
+/* Skill pill */
+
+.skill-pill {
+    width: 180px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-left: 14px;
+
+    margin-bottom: 14px;
+
+    border-radius: 19px;
+
+    background: #111A26;
+
+    font-size: 13px;
+
+    line-height: normal;
+
+    font-weight: 500;
+
+    color: #DCE4ED;
+}
+
+
+/* =========================================================
+   DIVIDER AFTER SKILLS
+========================================================= */
+
+.skills::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 285px;
+
+    width: 1296px;
+    height: 1px;
+
+    background: #273142;
+}
+
+
+/* =========================================================
+   PROJECTS
+========================================================= */
+
+.projects {
+    position: absolute;
+
+    left: 72px;
+    top: 1425px;
+
+    width: 1296px;
+    height: 900px;
+}
+
+
+.projects .section-label {
+    top: 0;
+}
+
+
+/* Title */
+
+.projects-title {
+    position: absolute;
+
+    left: 0;
+    top: 40px;
+
+    width: 900px;
+
+    font-size: 42px;
+
+    line-height: normal;
+
+    font-weight: 700;
+
+    letter-spacing: -1.5px;
+
+    color: #F5F7FA;
+}
+
+
+/* =========================================================
+   PROJECT CARD
+========================================================= */
+
+.project-card {
+    position: absolute;
+
+    left: 0;
+
+    width: 1296px;
+    height: 205px;
+
+    border-radius: 24px;
+
+    background: #0D141E;
+}
+
+
+/* Positions */
+
+.project-one {
+    top: 120px;
+}
+
+
+.project-two {
+    top: 365px;
+}
+
+
+.project-three {
+    top: 610px;
+}
+
+
+/* Thumbnail */
+
+.project-thumb {
+    position: absolute;
+
+    left: 24px;
+    top: 24px;
+
+    width: 270px;
+    height: 157px;
+
+    border-radius: 16px;
+
+    background: #172131;
+}
+
+
+/* Project content */
+
+.project-content {
+    position: absolute;
+
+    left: 323px;
+    top: 30px;
+
+    width: 700px;
+}
+
+
+/* Number */
+
+.project-number {
+    display: block;
+
+    font-size: 12px;
+
+    line-height: normal;
+
+    font-weight: 600;
+
+    color: #71839B;
+}
+
+
+/* Category */
+
+.project-category {
+    margin-top: 16px;
+
+    font-size: 13px;
+
+    line-height: normal;
+
+    font-weight: 600;
+
+    color: #8496AE;
+}
+
+
+/* Project title */
+
+.project-content h3 {
+    margin-top: 17px;
+
+    font-size: 25px;
+
+    line-height: normal;
+
+    font-weight: 600;
+
+    color: #F1F4F8;
+}
+
+
+/* Technologies */
+
+.project-tech {
+    margin-top: 14px;
+
+    font-size: 13px;
+
+    line-height: normal;
+
+    font-weight: 400;
+
+    color: #94A4B7;
+}
+
+
+/* Case study */
+
+.case-study {
+    position: absolute;
+
+    right: 40px;
+    bottom: 17px;
+
+    width: 190px;
+
+    text-align: right;
+
+    font-size: 13px;
+
+    line-height: normal;
+
+    font-weight: 600;
+
+    color: #E6ECF3;
+
+    transition: opacity 0.2s ease;
+}
+
+
+.case-study:hover {
+    opacity: 0.7;
+}
+
+
+/* =========================================================
+   DIVIDER BEFORE EDUCATION
+========================================================= */
+
+.projects::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 900px;
+
+    width: 1296px;
+    height: 1px;
+
+    background: #273142;
+}
+
+
+/* =========================================================
+   EDUCATION
+========================================================= */
+
+.education {
+    position: absolute;
+
+    left: 72px;
+    top: 2385px;
+
+    width: 1296px;
+    height: 405px;
+}
+
+
+.education .section-label {
+    top: 0;
+}
+
+
+/* Title */
+
+.education-title {
+    position: absolute;
+
+    left: 0;
+    top: 40px;
+
+    width: 700px;
+
+    font-size: 42px;
+
+    line-height: normal;
+
+    font-weight: 700;
+
+    letter-spacing: -1.5px;
+
+    color: #F5F7FA;
+}
+
+
+/* =========================================================
+   EDUCATION CARD
+========================================================= */
+
+.education-card {
+    position: absolute;
+
+    left: 0;
+    top: 120px;
+
+    width: 760px;
+    height: 190px;
+
+    border-radius: 22px;
+
+    background: #0D141E;
+}
+
+
+.education-card h3 {
+    position: absolute;
+
+    left: 28px;
+    top: 35px;
+
+    width: 600px;
+
+    font-size: 23px;
+
+    line-height: normal;
+
+    font-weight: 600;
+
+    color: #F0F4F8;
+}
+
+
+.education-major {
+    position: absolute;
+
+    left: 28px;
+    top: 75px;
+
+    width: 500px;
+
+    font-size: 15px;
+
+    line-height: normal;
+
+    font-weight: 400;
+
+    color: #9AA9BC;
+}
+
+
+.education-description {
+    position: absolute;
+
+    left: 28px;
+    top: 120px;
+
+    width: 650px;
+
+    font-size: 14px;
+
+    line-height: normal;
+
+    font-weight: 400;
+
+    color: #74869D;
+}
+
+
+/* =========================================================
+   IELTS CARD
+========================================================= */
+
+.ielts-card {
+    position: absolute;
+
+    left: 788px;
+    top: 120px;
+
+    width: 508px;
+    height: 190px;
+
+    border-radius: 22px;
+
+    background: #E9EEF5;
+}
+
+
+/* Label */
+
+.ielts-label {
+    position: absolute;
+
+    left: 32px;
+    top: 33px;
+
+    width: 180px;
+
+    font-size: 12px;
+
+    line-height: normal;
+
+    font-weight: 700;
+
+    color: #5F7189;
+}
+
+
+/* Score */
+
+.ielts-score {
+    position: absolute;
+
+    left: 32px;
+    top: 65px;
+
+    width: 200px;
+
+    font-size: 52px;
+
+    line-height: normal;
+
+    font-weight: 700;
+
+    letter-spacing: -2px;
+
+    color: #10151E;
+}
+
+
+/* Roadmap */
+
+.ielts-roadmap {
+    position: absolute;
+
+    right: 58px;
+    top: 85px;
+
+    width: 230px;
+
+    text-align: right;
+
+    font-size: 15px;
+
+    line-height: normal;
+
+    font-weight: 600;
+
+    color: #3D4B5D;
+}
+
+
+/* =========================================================
+   DIVIDER BEFORE CONTACT
+========================================================= */
+
+.education::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 405px;
+
+    width: 1296px;
+    height: 1px;
+
+    background: #273142;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact {
+    position: absolute;
+
+    left: 72px;
+    top: 2850px;
+
+    width: 1296px;
+    height: 360px;
+}
+
+
+.contact .section-label {
+    top: 0;
+}
+
+
+/* Contact title */
+
+.contact-title {
+    position: absolute;
+
+    left: 0;
+    top: 40px;
+
+    width: 760px;
+
+    font-size: 42px;
+
+    line-height: normal;
+
+    font-weight: 700;
+
+    letter-spacing: -1.5px;
+
+    color: #F5F7FA;
+}
+
+
+/* Contact button */
+
+.contact-button {
+    position: absolute;
+
+    left: 0;
+    top: 180px;
+
+    width: 220px;
+    height: 54px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 27px;
+
+    background: #F5F7FA;
+
+    color: #10151E;
+
+    font-size: 14px;
+
+    line-height: normal;
+
+    font-weight: 600;
+
+    transition: opacity 0.2s ease;
+}
+
+
+.contact-button:hover {
+    opacity: 0.88;
+}
+
+
+/* Social links */
+
+.social-links {
+    position: absolute;
+
+    right: 0;
+    top: 195px;
+
+    width: 420px;
+    height: 25px;
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 30px;
+}
+
+
+.social-links a {
+    font-size: 15px;
+
+    line-height: normal;
+
+    font-weight: 500;
+
+    color: #AEB9C8;
+
+    transition: color 0.2s ease;
+}
+
+
+.social-links a:hover {
+    color: #F5F7FA;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    position: absolute;
+
+    left: 72px;
+    top: 3210px;
+
+    width: 1296px;
+    height: 390px;
+
+    border-top: 1px solid #273142;
+}
+
+
+/* Footer name */
+
+.footer-name {
+    position: absolute;
+
+    left: 0;
+    top: 50px;
+
+    width: 350px;
+
+    font-size: 16px;
+
+    line-height: normal;
+
+    font-weight: 600;
+
+    color: #DDE5EE;
+}
+
+
+/* Footer copy */
+
+.footer-copy {
+    position: absolute;
+
+    right: 0;
+    top: 52px;
+
+    width: 368px;
+
+    text-align: right;
+
+    font-size: 13px;
+
+    line-height: normal;
+
+    font-weight: 400;
+
+    color: #71839B;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   =========================================================
+
+   Desktop Figma version above is exact 1440px.
+   Below this we adapt the design for smaller screens.
+========================================================= */
+
+@media (max-width: 1439px) {
+
+    body {
+        overflow-x: auto;
+    }
+
+    .portfolio {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .portfolio {
+        width: 100%;
+        height: auto;
+
+        min-height: 100vh;
+
+        overflow: visible;
+    }
+
+
+    .navbar {
+        position: relative;
+
+        width: 100%;
+        height: 80px;
+
+        padding: 0 32px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .logo {
+        position: static;
+
+        width: auto;
+        height: auto;
+    }
+
+
+    .navigation {
+        display: none;
+    }
+
+
+    .nav-button {
+        position: static;
+
+        width: 130px;
+        height: 42px;
+    }
+
+
+    .hero,
+    .about,
+    .skills,
+    .projects,
+    .education,
+    .contact,
+    .footer {
+        position: relative;
+
+        left: auto;
+        top: auto;
+
+        width: auto;
+        height: auto;
+
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+
+    .hero {
+        min-height: 720px;
+
+        padding-top: 90px;
+    }
+
+
+    .hero-content {
+        position: relative;
+
+        left: auto;
+        top: auto;
+
+        width: 100%;
+    }
+
+
+    .hero-eyebrow,
+    .hero-title,
+    .hero-description,
+    .hero-button,
+    .hero-status {
+        position: relative;
+
+        left: auto;
+        top: auto;
+    }
+
+
+    .hero-title {
+        margin-top: 24px;
+
+        width: 100%;
+        height: auto;
+
+        font-size: clamp(48px, 7vw, 66px);
+    }
+
+
+    .hero-description {
+        margin-top: 24px;
+
+        width: 100%;
+        height: auto;
+    }
+
+
+    .hero-button {
+        margin-top: 32px;
+    }
+
+
+    .hero-status {
+        margin-top: 20px;
+    }
+
+
+    .hero-visual {
+        display: none;
+    }
+
+
+    .section-label,
+    .about .section-label,
+    .skills .section-label,
+    .projects .section-label,
+    .education .section-label,
+    .contact .section-label {
+        position: relative;
+
+        left: auto;
+        top: auto;
+    }
+
+
+    .about,
+    .skills,
+    .projects,
+    .education,
+    .contact {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+
+    .about-title,
+    .about-description,
+    .skills-title,
+    .projects-title,
+    .education-title,
+    .contact-title {
+        position: relative;
+
+        left: auto;
+        top: auto;
+
+        width: 100%;
+
+        margin-top: 40px;
+    }
+
+
+    .about-description {
+        margin-top: 24px;
+
+        font-size: 18px;
+    }
+
+
+    .principles {
+        position: relative;
+
+        left: auto;
+        top: auto;
+
+        width: 100%;
+        height: auto;
+
+        margin-top: 50px;
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+
+    .principle-card,
+    .principle-card:nth-child(1),
+    .principle-card:nth-child(2),
+    .principle-card:nth-child(3) {
+        position: relative;
+
+        left: auto;
+        top: auto;
+
+        width: 100%;
+    }
+
+
+    .skill-column,
+    .skill-core,
+    .skill-tools,
+    .skill-growing {
+        position: relative;
+
+        left: auto;
+        top: auto;
+
+        width: 100%;
+
+        margin-top: 40px;
+    }
+
+
+    .skill-pill {
+        width: 100%;
+    }
+
+
+    .skills::after,
+    .projects::after,
+    .education::after {
+        display: none;
+    }
+
+
+    .project-card,
+    .project-one,
+    .project-two,
+    .project-three {
+        position: relative;
+
+        left: auto;
+        top: auto;
+
+        width: 100%;
+
+        height: auto;
+
+        min-height: 205px;
+
+        margin-top: 24px;
+    }
+
+
+    .project-content {
+        left: 323px;
+        max-width: calc(100% - 350px);
+    }
+
+
+    .education-card,
+    .ielts-card {
+        position: relative;
+
+        left: auto;
+        top: auto;
+
+        width: 100%;
+
+        margin-top: 24px;
+    }
+
+
+    .education {
+        display: block;
+    }
+
+
+    .contact-button {
+        position: relative;
+
+        left: auto;
+        top: auto;
+
+        margin-top: 40px;
+    }
+
+
+    .social-links {
+        position: relative;
+
+        right: auto;
+        top: auto;
+
+        width: 100%;
+
+        margin-top: 30px;
+
+        justify-content: flex-start;
+    }
+
+
+    .footer {
+        min-height: 150px;
+
+        padding-top: 32px;
+
+        padding-bottom: 32px;
+    }
+
+
+    .footer-name,
+    .footer-copy {
+        position: relative;
+
+        left: auto;
+        right: auto;
+        top: auto;
+
+        width: auto;
+
+        text-align: left;
+    }
+
+
+    .footer-copy {
+        margin-top: 16px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+
+    .nav-button {
+        width: 112px;
+
+        font-size: 12px;
+    }
+
+
+    .hero,
+    .about,
+    .skills,
+    .projects,
+    .education,
+    .contact,
+    .footer {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+    .hero {
+        min-height: 650px;
+
+        padding-top: 60px;
+    }
+
+
+    .hero-title {
+        font-size: 43px;
+
+        letter-spacing: -1.8px;
+    }
+
+
+    .hero-description {
+        font-size: 17px;
+    }
+
+
+    .section-label {
+        font-size: 12px;
+    }
+
+
+    .about-title,
+    .skills-title,
+    .projects-title,
+    .education-title,
+    .contact-title {
+        font-size: 34px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .about-description {
+        font-size: 16px;
+    }
+
+
+    .principle-card {
+        height: 150px;
+    }
+
+
+    .project-card {
+        padding-bottom: 24px;
+    }
+
+
+    .project-thumb {
+        position: relative;
+
+        left: 24px;
+        top: 24px;
+
+        width: calc(100% - 48px);
+
+        height: 150px;
+    }
+
+
+    .project-content {
+        position: relative;
+
+        left: 24px;
+        top: 48px;
+
+        width: calc(100% - 48px);
+
+        max-width: none;
+    }
+
+
+    .case-study {
+        position: relative;
+
+        right: auto;
+        bottom: auto;
+
+        display: block;
+
+        margin: 72px 24px 0 auto;
+    }
+
+
+    .education-card,
+    .ielts-card {
+        min-height: 190px;
+    }
+
+
+    .ielts-roadmap {
+        right: 32px;
+
+        width: 180px;
+
+        font-size: 13px;
+    }
+
+
+    .social-links {
+        gap: 20px;
+    }
+
+
+    .social-links a {
+        font-size: 13px;
+    }
+}
